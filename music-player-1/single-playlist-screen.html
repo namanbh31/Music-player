@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/8ceeb78486.js" crossorigin="anonymous"></script>
+  <title>Static Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body class="color-darkslateblue">
+  <nav class="navbar navbar-expand-lg mt-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/Purple and Pink Futuristic Music Studio Logo .png" width="50"
+          height="50" class="ms-4" alt="logo" />
+        <div class="header-words-div d-inline-block align-bottom m-n3 text-white">
+          <span class="header-top-word d-block">Ninjas</span>
+          <span class="-header-bottom-word d-block">Studio</span>
+        </div>
+      </a>
+      <button class="navbar-toggler text-bg-secondary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Favorates</a>
+          </li>
+        </ul>
+        <form class="header-form" role="search">
+          <input class="form-control text-white" type="search" placeholder="Search" aria-label="Search" />
+        </form>
+        <div id="notification-icon" class="d-inline d-none d-lg-inline">
+          <div>
+            <i class="fa-solid fa-bell" style="color: #ffffff"></i>
+          </div>
+          <div id="notification-red-dot"></div>
+        </div>
+        <div id="profile-image" class="d-none d-lg-inline">
+          <a href="#"><img src="assets/profilephoto2.jpeg" alt="profile-photo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <div class="card main-card mb-3 rounded-0">
+      <div class="row g-0">
+        <div class="col-md-4 d-flex">
+          <img src="assets/song/img-11.jpeg" class="img-fluid justify-content-center" alt="...">
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <h5 class="card-title">Music Saga</h5>
+            <p class="artist-name text-secondary fs-6"> Lee Cooper</p>
+            <p class="card-text text-secondary">Music is generally defined as the art of arranging sound to create some
+              combination of form, harmony, melody, rhythm, or otherwise expressive conten.</p>
+            <div class="main-card-button-div mx-sm-auto mx-md-0">
+              <button class="play-now-button" onclick="myFunction()">Play Now</button>
+              <button class="follow-btn ms-5">Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-section-list">
+      <ul class="list-group list-unstyled">
+        <li class="music-list-item-main-section my-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="list-num-div position-relative me-2 text-secondary pt-lg-5 pt-xl-3">
+              <span class="list-number">
+                01
+              </span>
+            </div>
+
+            <img src="assets/song/img-5.jpg" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Hip Hop Music</span>
+              <p class="artist-name text-secondary">Kanye West</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-main-section mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-3 ">
+              <span class="list-number">
+                02
+              </span>
+            </div>
+            <img src="assets/song/img-6.webp" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Somebody That I Like</span>
+              <p class="artist-name text-secondary">Kate East</p>
+            </div>
+            
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-main-section mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-3">
+              <span class="list-number">
+                03
+              </span>
+            </div>
+            <img src="assets/song/img-7.jpeg" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Havana</span>
+              <p class="artist-name text-secondary">Camella Cabello</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-main-section mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-3">
+              <span class="list-number">
+                04
+              </span>
+            </div>
+            <img src="assets/song/img-8.webp" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">New Bullet</span>
+              <p class="artist-name text-secondary">Jazz Artists</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-main-section mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-3">
+              <span class="list-number">
+                05
+              </span>
+            </div>
+            <img src="assets/song/img-9.jpg" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">Ghulam</span>
+              <p class="artist-name text-secondary">Sahib Bibi</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-main-section mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-3">
+              <span class="list-number">
+                06
+              </span>
+            </div>
+            <img src="assets/song/img-10.jpg" alt="" class="side-card-img-main-section" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Trailer Tension</span>
+              <p class="artist-name text-secondary">Noua</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+              <button class="add-to-queue-btn"><i class="fa-solid fa-plus mx-3" style="color: #c5cad3;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <aside class="right-section-top">
+    <div class="side-section-upper">
+      <div class="right-side-top text-white d-flex">
+        <h4>Similar Artist</h4>
+        <a href="#" class="text-decoration-none text-white view-all-text">
+          View All</a>
+      </div>
+      <ul class="list-group list-unstyled">
+        <li class="music-list-item p-2" onclick="myFunction()">
+          <div class="side-card-big d-flex">
+            <img src="assets/song/img-1.avif" alt="" class="side-card-big-img" />
+            <div class="side-card-big-body ms-4">
+              <span class="text-white song-name"> Electro Pop</span>
+              <p class="artist-name text-secondary">Jhdam</p>
+            </div>
+
+            <div class="btn-group">
+              <button type="button" class="btn border-0 d- text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-ellipsis" style="color: #d0d3d8"></i>
+                <p class="song-duration">4:93</p>
+              </button>
+              <ul class="dropdown-menu rounded-0">
+                <li>
+                  <a class="dropdown-item item-1" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Play Now</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-2" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Queue</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-3" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Favourates</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item item-4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Get Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="music-list-item p-2" onclick="myFunction()">
+          <div class="side-card-big d-flex">
+            <img src="assets/song/img-2.webp" alt="" class="side-card-big-img" />
+            <div class="side-card-big-body ms-4">
+              <span class="text-white song-name">Falling</span>
+              <p class="artist-name text-secondary">Heroz</p>
+            </div>
+
+            <div class="btn-group">
+              <button type="button" class="btn border-0 d- text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-ellipsis" style="color: #d0d3d8"></i>
+                <p class="song-duration">4:93</p>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item item-1" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Play Now</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-2" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Queue</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-3" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Favourates</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item item-4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Get Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="music-list-item p-2" onclick="myFunction()">
+          <div class="side-card-big d-flex">
+            <img src="assets/song/img-3.jpg" alt="" class="side-card-big-img" />
+            <div class="side-card-big-body ms-4">
+              <span class="text-white song-name">Pain</span>
+              <p class="artist-name text-secondary">Ryan Jones</p>
+            </div>
+
+            <div class="btn-group">
+              <button type="button" class="btn border-0 d- text-white" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-ellipsis" style="color: #d0d3d8"></i>
+                <p class="song-duration">4:93</p>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item item-1" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Play Now</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-2" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Queue</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item item-3" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Add To Favourates</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item item-4" href="#">&nbsp;&nbsp;&nbsp;&nbsp;Get Info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="side-section-lower">
+      <div class="right-side-top text-white d-flex">
+        <h4>Recently Played</h4>
+        <a href="#" class="text-decoration-none text-white view-all-text">
+          View All</a>
+      </div>
+      <ul class="list-group list-unstyled">
+        <li class="music-list-item-small my-1 p-2" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="list-num-div position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                01
+              </span>
+            </div>
+
+            <img src="assets/song/img-5.jpg" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Hip Hop Music</span>
+              <p class="artist-name text-secondary">Kanye West</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-small my-1 p-2 mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                02
+              </span>
+            </div>
+            <img src="assets/song/img-6.webp" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name"> Somebody That I Like</span>
+              <p class="artist-name text-secondary">Kate East</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-small my-1 p-2 mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                03
+              </span>
+            </div>
+            <img src="assets/song/img-7.jpeg" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">Havana</span>
+              <p class="artist-name text-secondary">Camilla Cabello</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-small my-1 p-2 mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                04
+              </span>
+            </div>
+            <img src="assets/song/img-8.webp" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">New Bullet</span>
+              <p class="artist-name text-secondary">Jazz Artists</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-small my-1 p-2 mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                05
+              </span>
+            </div>
+            <img src="assets/song/img-9.jpg" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">Ghulam</span>
+              <p class="artist-name text-secondary">Sahib Bibi</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+        <li class="music-list-item-small my-1 p-2 mb-1" onclick="myFunction()">
+          <div class="side-card-small d-flex position-relative">
+            <div class="position-relative me-2 text-secondary pt-lg-5 pt-xl-3 pt-2">
+              <span class="list-number">
+                06
+              </span>
+            </div>
+            <img src="assets/song/img-10.jpg" alt="" class="side-card-small-img" />
+            <div class="side-card-samll-body ms-4">
+              <span class="text-white song-name">Trailer Tension</span>
+              <p class="artist-name text-secondary">Noua</p>
+            </div>
+            <div class="like-button d-flex">
+              <button class="favorate-btn"><i class="fa-regular fa-heart fa-sm" style="color: #d1d7e1;"></i></button>
+            </div>
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <div class="song-control-footer" id="song-control-footer-id">
+    <div class="progress  rounded-0" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"style="height:4px">
+      <div class="progress-bar" style="width: 25%"></div>
+      <div class="indicator">
+      </div>
+    </div>
+
+    <div class="control-content d-flex position-relative">
+      <img src="assets/song/img-1.avif" alt="" class="control-footer-img">
+      <div class="control-footer-song-details">
+        <p class="song-name">Tere Naam</p>
+        <p class="artist-name text-secondary">Karan Aujla</p>
+      </div>
+      <div class="like-dislike">
+        <button class="favorate-btn mx-2"><i class="fa-regular fa-thumbs-up fa-flip-horizontal" style="color: #ffffff;"></i></button>
+        <button class="dislike-btn"><i class="fa-regular fa-thumbs-down" style="color: #ffffff;"></i></button>
+      </div>
+      <div class="audio-controls">
+        <button id="loop-btn"><i class="fa-solid fa-repeat" style="color: gray;"></i></button>
+        <button id="previous-btn"><i class="fa-solid fa-backward-step fa-lg" ></i></button>
+        <button id="pause-play-btn"><i class="fa-regular fa-circle-pause fa-2xl" ></i></button>
+        <button id="forward-btn"><i class="fa-solid fa-forward-step fa-lg" ></i></button>
+        <button id="mixer-btn"><i class="fa-solid fa-shuffle" style="color: gray;"></i></button>
+        <!-- <button id="song-footer-options"><i class="fa-solid fa-ellipsis-vertical" style="color: #ffffff;"></i></button> -->
+      </div>
+      <div class="other-controls d-flex">  
+        <button class=""><i class="fa-solid fa-list" ></i></button>
+        <button><i class="fa-solid fa-computer" style="color: #c6cedd;"></i></button>
+        <button class="vol-btn"><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></button>
+        <input type="range" class="range-field">
+        <button><i class="fa-solid fa-up-right-and-down-left-from-center" style="color: #ffffff;"></i></button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+<script src="script.js"></script>
+
+</html>
